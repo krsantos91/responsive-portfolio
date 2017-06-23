@@ -1,0 +1,244 @@
+body{
+	background-color:#cccccc;
+	width:960px;
+}
+/*DEFINING PROPERTIES OF THE HEADER*/
+#heading{
+	width:auto;
+	height:75px;
+	padding: 0 2cm;
+	overflow:auto;
+	background-color:#ffffff;
+	border-bottom: 2px solid #cccccc;
+}
+.home{
+	line-height:75px;
+}
+#name{
+	float:left;
+	font-size:24px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	background-color:#4aaaa5;
+	padding:0 30px;
+}
+#name a:link { color: #ffffff; text-decoration:none; }
+#name a:visited { color: #ffffff; text-decoration:none; }
+#name a:hover { color: #ffffff; text-decoration:underline; }
+#name a:active { color: #ffffff; text-decoration:none; }
+
+#headernav{
+	float:right;
+	font-size:14px;
+	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+#headernav a:link { color: #777777; text-decoration:none;padding:0 6px;}
+#headernav a:visited { color: purple; text-decoration:none;padding: 0 6px; }
+#headernav a:hover { color: #777777; text-decoration:underline;padding:0 6px; }
+#headernav a:active { color: #777777; text-decoration:none;padding:0 6px; }
+
+/*DEFINING PROPERTIES OF MAIN BODY TEXT*/
+.mainbody{
+	background-image: url("../images/seigaiha.png");
+	width:auto;
+	padding: 35px 75px 100px 90px;
+	overflow: auto;
+}
+
+.mainheader{
+	font-size:24px;
+	font-family: 'Georgia' Times, Times New Roman, serif;
+	color:#4aaaa5;
+}
+.mainsection{
+	border: 1px solid #dddddd;
+	padding:20px 15px;
+}
+
+.contactimg{
+	float:left;
+	width:60px;
+	height:60px;
+	margin:3px;
+}
+.box{
+	height:190px;
+	width:250px;
+	margin:1px;
+	float:left;
+}
+
+.img-text{
+	background-color:#4aaaa5;
+	position:absolute;
+	z-index:1;
+	top:0;
+	margin-top:140px;
+	width:inherit;
+	height:30px;
+	font-size:16px;
+	color:#ffffff;
+	font-family: 'Georgia' Times, Times New Roman, serif;
+	text-align:center;
+	line-height: 30px
+}
+.bodytext{
+	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color:#777777;
+}
+#aboutme{
+	width:500px;
+	background-color:white;
+	float:left;
+	margin-right:30px;
+}
+#portfolio{
+	width:510px;
+	height:700px;
+	background-color:white;
+	float:left;
+	margin-right:15px;
+}
+#contact{
+	width:500px;
+	background-color:white;
+	float:left;
+	margin-right:30px;
+}
+#sidebar{
+	width:200px;
+	background-color:white;
+	float:right;
+}
+#box1{
+	position:absolute;
+	background-color:black;
+}
+#box2{
+	position:absolute;
+	background-color:purple;
+	left:375px;
+}
+#box3{
+	position:absolute;
+	background-color:red;
+	top:401px;
+}
+#box4{
+	position:absolute;
+	background-color:orange;
+	top:401px;
+	left:375px;
+}
+#box5{
+	position:absolute;
+	background-color:pink;
+	top:600px;
+}
+#profileimage{
+	width:250px;height:250px;float:left;margin-right:3px;
+}
+
+/*DEFINING PROPERTIES OF FOOTER*/
+.footer{
+	float:left;
+	width:960px;
+	height:80px;
+	border-top: 8px solid #4aaaa5;
+	background-color:#666666;
+	line-height:70px;
+}
+#pfoot{
+	font-size:10px;
+	color:#bfbfc3;
+	text-align:center;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width:980px){
+	#aboutme,#portfolio,#contact{
+		width:50%;
+		overflow:auto;
+	}
+	#portfolio{
+		height:1050px;
+	}
+	#sidebar{
+		width:30%;
+	}
+	#profileimage{
+		float:none;
+	}
+	.mainbody{
+		padding-right:15%;
+		padding-left:15%;
+	}
+	.box{
+		float:none;
+	}
+	#box1,#box2,#box3,#box4,#box5{
+		position:static;
+		z-index:0;
+		display: block;
+   	 	margin-left: auto;
+    	margin-right: auto;
+	}
+	#text1{
+		position:absolute;
+		top:190px;
+	}
+	#text2{
+		position:absolute;
+		top:380px;
+	}		
+	#text3{
+		position:absolute;
+		top:570px;
+	}	
+	#text4{
+		position:absolute;
+		top:760px;
+	}	
+	#text5{
+		position:absolute;
+		top:950px;
+	}
+}
+
+@media screen and (max-width:768px){
+	.mainbody{
+		padding:35px 10px 20px 10px;
+	}
+	#aboutme,#portfolio,#contact,#sidebar{
+		float:none;
+		width:auto;
+		margin-right:0px;
+		margin-bottom:20px;
+		overflow:auto;
+	}
+	#profileimage{
+		float:left;
+		width:30%;
+		height:30%;
+	}
+}
+
+@media screen and (max-width:640px){
+
+	#aboutme,#portfolio,#contact,#sidebar{
+		float:none;
+		width:inherit;
+		margin-right:0px;
+		margin-bottom:20px;
+		overflow:auto;
+	}
+	#profileimage{
+		width:630px;
+		height:630px;
+		float:none;
+		display: block;
+   	 	margin-left: auto;
+    	margin-right: auto;
+	}
+
+}
